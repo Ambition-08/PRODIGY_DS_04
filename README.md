@@ -4,7 +4,7 @@
 This project analyzes sentiment patterns in social media data to uncover public opinion and attitudes toward specific topics or brands. Using state-of-the-art Natural Language Processing (NLP) techniques, such as TF-IDF and sentiment analysis with VADER, this project provides insights into positive, negative, and neutral sentiments expressed in social media posts. The results are visualized to help stakeholders understand audience perceptions and track sentiment trends over time. This repository includes the code, dataset, and detailed documentation to guide you through the analysis process.
 
 ## Table of Contents
--[Section one](#features)
+-[Features](#features)
    # Social Media Sentiment Analysis
    Analyze sentiment patterns in social media data to understand public opinion on specific topics or brands.
 
