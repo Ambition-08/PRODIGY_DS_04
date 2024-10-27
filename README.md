@@ -7,7 +7,7 @@ This project analyzes sentiment patterns in social media data to uncover public 
    Analyze sentiment patterns in social media data to understand public opinion on specific topics or brands.
 
    ## Features
-   - Sentiment EDA [Go to Installation section](#installation)
+   - Sentiment EDA [Go to EDA_Twitter.ipynb section](#EDA_Twitter.ipynb)
    - TF-IDF for keyword extraction
    - Visualization of sentiment trends
 
