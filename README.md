@@ -7,7 +7,7 @@ This project analyzes sentiment patterns in social media data to uncover public 
    Analyze sentiment patterns in social media data to understand public opinion on specific topics or brands.
 
    ## Features
-   - Sentiment Analysis with VADER
+   - Sentiment EDA [Go to Installation section](#installation
    - TF-IDF for keyword extraction
    - Visualization of sentiment trends
 
