@@ -34,6 +34,7 @@ To run this repo, be sure to install the following environment and library:
 - **NumPy**: 1.26.4
 - **h5py**: 3.12.1
 - **scikit-learn**: 1.5.2
+
 And also the **important libraries** for this project are
 - [libraries.ipynb](./libraries.ipynb): Jupyter notebook listing libraries used in the project.
 
