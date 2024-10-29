@@ -27,13 +27,13 @@ Getting Started
 
 To run this repo, be sure to install the following environment and library:
 
-    Python 2.7
-    Tensorflow=1.2.0
-    Keras=2.1.1
-    Pandas=0.20.3
-    Numpy=1.13.3
-    h5py=2.7.0
-    sklearn=0.19.1
+**Python**: 3.11.8
+- **TensorFlow**: 2.18.0
+- **Keras**: 3.6.0
+- **Pandas**: 2.2.2
+- **NumPy**: 1.26.4
+- **h5py**: 3.12.1
+- **scikit-learn**: 1.5.2
 
 File Illustration
 There are currently three different models:
@@ -52,6 +52,44 @@ Data is collected from poloniex and parse to h5py file:
 
     DataCollection.ipynb
     PastSampler.ipynb
+# Sentiment Analysis Dataset
+
+This repository contains a dataset for sentiment analysis, focusing on user sentiments expressed about the game "Borderlands." The dataset includes various attributes that capture user opinions.
+
+## Dataset Description
+
+The dataset consists of the following columns:
+
+| iD  | entity       | sentiment | text                                  |
+|-----|--------------|-----------|---------------------------------------|
+| 0   | 2401         | Borderlands| Positive  | I'm getting Borderlands murder.       |
+| 1   | 2401         | Borderlands| Positive  | I'm coming borders, I kill all.      |
+| 2   | 2401         | Borderlands| Positive  | I'm getting Borderlands, kill all.   |
+| 3   | 2401         | Borderlands| Positive  | I'm coming Borderlands, murder all.  |
+| 4   | 2401         | Borderlands| Positive  | I'm getting Borderlands 2, murder all.|
+
+### Column Definitions
+- **iD**: A unique identifier for each entry.
+- **entity**: The entity being referred to, as example, "TomClancysRainbowSix, MaddenNFL, Borderlands.LeagueOfLegends,CallOfDuty,Verizon,CallOfDutyBlackopsColdWar,Facebook...."
+- **sentiment**: The sentiment expressed in the text (Positive,Neutral,Negative).
+- **text**: The user-generated text reflecting their opinion.
+## Usage
+
+This dataset can be used for various applications, including:
+
+- Sentiment analysis
+- Natural language processing tasks
+- Machine learning model training
+
+## How to Contribute
+
+If you'd like to contribute to this dataset or improve the analysis, feel free to open a pull request or submit issues.
+
+## License
+
+This dataset is available under the [MIT License](LICENSE).
+
+
 
 Run
 
