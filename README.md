@@ -86,5 +86,4 @@ If you'd like to contribute to this dataset or improve the analysis, feel free t
 ## License
 
 This dataset is available under the [MIT License](LICENSE).
- # Social Media Sentiment Analysis
-   Analyze sentiment patterns in social media data to understand public opinion on specific topics or brands.
+
