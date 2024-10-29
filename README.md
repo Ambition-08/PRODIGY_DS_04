@@ -64,7 +64,7 @@ Sample of the data set:
 ### Data_cleaning 
 Before diving directly ton data analysis it is good to have readly available data fro further operations, so data cleaning python file is  included in the repository.
 - [loading_data_And_Data_Cleaning.ipynb](./loading_data_And_Data_Cleaning.ipynb): Jupyter notebook for loading and cleaning the data.
-- 
+
 ### Data_Analysis
 - Exploratory data analysis on Twitter data [EDA_Twitter.ipynb](./EDA_Twitter.ipynb): 
 - sentiment analysis by entity [Entity-Wise Sentiment Analysis.ipynb](./Entity-Wise%20Sentiment%20Analysis.ipynb)
