@@ -1,5 +1,6 @@
 
-# Social Media Sentiment Analysis
+# # Social Media Sentiment Analysis
+## Introduction
 
 This project analyzes sentiment patterns in social media data to uncover public opinion and attitudes toward specific topics or brands. Using state-of-the-art Natural Language Processing (NLP) techniques, such as TF-IDF and sentiment analysis with VADER, this project provides insights into positive, negative, and neutral sentiments expressed in social media posts. The results are visualized to help stakeholders understand audience perceptions and track sentiment trends over time. This repository includes the code, dataset, and detailed documentation to guide you through the analysis process.
 
@@ -19,12 +20,6 @@ This project analyzes sentiment patterns in social media data to uncover public 
 ## Getting Started
 Follow the instructions in the setup guide to install dependencies and run the analysis. Check out the examples provided for guidance on replicating the analysis or customizing it for your own data.
 
-
-Introduction
-
-This repo makes use of the state-of-art Deep Learning algorithm to predict the price of Bitcoin, which has the potential to generalize to other cryptocurrency. It leverages models such as CNN and RNN implemented by Keras running on top of Tensorflow. You can find more detailed illustration in this blog post.
-Getting Started
-
 To run this repo, be sure to install the following environment and library:
 
 **Python**: 3.11.8
@@ -36,7 +31,7 @@ To run this repo, be sure to install the following environment and library:
 - **scikit-learn**: 1.5.2
 
 File Illustration
-There are currently three different models:
+There are currently three different Analysis:
 
     LSTM.py
     GRU.py
@@ -44,21 +39,22 @@ There are currently three different models:
 
 The validation result is plotted in:
 
-    Plot_LSTM.ipynb
+- Exploratory data analysis on Twitter data [EDA_Twitter.ipynb](./EDA_Twitter.ipynb): 
+- [Entity-Wise Sentiment Analysis.ipynb](./Entity-Wise%20Sentiment%20Analysis.ipynb): Jupyter notebook for performing sentiment analysis by entity.
     Plot_GRU.ipynb
     Plot_CNN.ipynb
 
 Data is collected from poloniex and parse to h5py file:
 
-    DataCollection.ipynb
-    PastSampler.ipynb
+   [twitter_training.csv](./twitter_training.csv): or you can access the dataset used in this project on Kaggle: [Twitter Entity Sentiment Analysis Dataset](https://www.kaggle.com/datasets/jp797498e/twitter-entity-sentiment-analysis).
+
 # Sentiment Analysis Dataset
 
 This repository contains a dataset for sentiment analysis, focusing on user sentiments expressed about the game "Borderlands." The dataset includes various attributes that capture user opinions.
 
 ## Dataset Description
 
-The dataset consists of the following columns:
+Sample of the data set:
 
 | iD  | entity       | sentiment | text                                  |
 |-----|--------------|-----------|---------------------------------------|
@@ -76,6 +72,18 @@ The dataset consists of the following columns:
 ## Usage
 
 This dataset can be used for various applications, including:
+## Project Files
+
+This repository contains the following files: First be sure to run [twitter_training.csv](./twitter_training.csv): CSV file containing the training data for sentiment analysis.
+
+- [Negative Sentiment Words.png](./Negative%20Sentiment%20Words.png): Image showing negative sentiment words.
+- [Positive Sentiment Words.png](./Positive%20Sentiment%20Words.png): Image showing positive sentiment words.
+- [Sentiment Distribution.png](./Sentiment%20Distribution.png): Image displaying the sentiment distribution.
+- [TF-IDF for keyword extraction.ipynb](./TF-IDF%20for%20keyword%20extraction.ipynb): Jupyter notebook for TF-IDF keyword extraction.
+- [libraries.ipynb](./libraries.ipynb): Jupyter notebook listing libraries used in the project.
+- [loading_data_And_Data_Cleaning.ipynb](./loading_data_And_Data_Cleaning.ipynb): Jupyter notebook for loading and cleaning the data.
+- [outputEntity-Wise Sentiment Analysis.png](./outputEntity-Wise%20Sentiment%20Analysis.png): Output image from the entity-wise sentiment analysis.
+-
 
 - Sentiment analysis
 - Natural language processing tasks
@@ -100,8 +108,25 @@ python CNN.py
 To run iPython file, you need to run jupyter notebook
 
 jupyter notebook
+Jupyter notebook for exploratory data analysis on Twitter data.
+## Project Files
 
-Be sure to run DataCollection.ipynb and PastSampler.ipynb first to create database for training models.
+This repository contains the following files:
+
+- Jupyter notebook for exploratory data analysis on Twitter data.[EDA_Twitter.ipynb](./EDA_Twitter.ipynb): 
+- [Entity-Wise Sentiment Analysis.ipynb](./Entity-Wise%20Sentiment%20Analysis.ipynb): Jupyter notebook for performing sentiment analysis by entity.
+- [Negative Sentiment Words.png](./Negative%20Sentiment%20Words.png): Image showing negative sentiment words.
+- [Positive Sentiment Words.png](./Positive%20Sentiment%20Words.png): Image showing positive sentiment words.
+- [README.md](./README.md): This file.
+- [Sentiment Distribution.png](./Sentiment%20Distribution.png): Image displaying the sentiment distribution.
+- [TF-IDF for keyword extraction.ipynb](./TF-IDF%20for%20keyword%20extraction.ipynb): Jupyter notebook for TF-IDF keyword extraction.
+- [libraries.ipynb](./libraries.ipynb): Jupyter notebook listing libraries used in the project.
+- [loading_data_And_Data_Cleaning.ipynb](./loading_data_And_Data_Cleaning.ipynb): Jupyter notebook for loading and cleaning the data.
+- [outputEntity-Wise Sentiment Analysis.png](./outputEntity-Wise%20Sentiment%20Analysis.png): Output image from the entity-wise sentiment analysis.
+- [twitter_training.csv](./twitter_training.csv): CSV file containing the training data for sentiment analysis.
+
+
+
 Input & Output & Loss
 
 The input consists of a list of past Bitcoin data with step size of 256. The output is the predicted value of the future data with step size of 16. Note that since the data is ticked every five minutes, the input data spans over the past 1280 minutes, while the output cover the future 80 minutes. The datas are scaled with MinMaxScaler provided by sklearn over the entire dataset. The loss is defined as Mean Square Error (MSE).
