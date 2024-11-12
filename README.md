@@ -1,19 +1,25 @@
 
-# # Social Media Sentiment Analysis
+## Social Media Sentiment Analysis
 ## Introduction
 
 This project analyzes sentiment patterns in social media data to uncover public opinion and attitudes toward specific topics or brands. Using state-of-the-art Natural Language Processing (NLP) techniques, such as TF-IDF and sentiment analysis with VADER, this project provides insights into positive, negative, and neutral sentiments expressed in social media posts. The results are visualized to help stakeholders understand audience perceptions and track sentiment trends over time. This repository includes the code, dataset, and detailed documentation to guide you through the analysis process.
 
 ## Table of Contents
+- [Social Media Sentiment Analysis](#social-media-sentiment-analysis)
+- [Introduction](#introduction)
+- [Table of Contents](#table-of-contents)
 - [Features](#features)
-- [Installation](#installation)
-- [Data_Collection](#data_collection)
-- [Dataset_Description](#dataset_description)
-- [Column_Definitions](#column_definitions)
-- [Data cleaning](#data_cleaning)
-- [Data_Analysis](#data_analysis)
-- [Sample_Outputs](#sample_outputs)
-- [ License](#license)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+- [File\_Illustration](#file_illustration)
+  - [Data\_Collection](#data_collection)
+- [Dataset\_Description](#dataset_description)
+  - [Column\_Definitions](#column_definitions)
+  - [Data\_cleaning](#data_cleaning)
+  - [Data\_Analysis](#data_analysis)
+  - [Sample\_Outputs](#sample_outputs)
+- [How\_to\_Contribute](#how_to_contribute)
+- [License](#license)
   
 ## Features
 - EDA_Twitter
@@ -27,7 +33,7 @@ Follow the instructions in the setup guide to install dependencies and run the a
 
 To run this repo, be sure to install the following environment and library:
 
-**Python**: 3.11.8
+**Python**: 3.12.3
 - **TensorFlow**: 2.18.0
 - **Keras**: 3.6.0
 - **Pandas**: 2.2.2
@@ -86,4 +92,3 @@ If you'd like to contribute to this dataset or improve the analysis, feel free t
 ## License
 
 This dataset is available under the [MIT License](LICENSE).
-
